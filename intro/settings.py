@@ -32,7 +32,8 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     # local apps
-    # 'pages.apps.PagesConfig',
+    'books.apps.BooksConfig',
+    'pages.apps.PagesConfig',
     # third party apps
     # django apps
     'django.contrib.admin',
@@ -41,8 +42,6 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'pages',
-
 ]
 
 MIDDLEWARE = [
@@ -60,7 +59,7 @@ ROOT_URLCONF = 'intro.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, 'intro', 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

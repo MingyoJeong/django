@@ -1,0 +1,6 @@
+{% extends "base.html" %}
+{% block content %}   
+    <h1>{{ time1|date }} 까지 {{ time1|timeuntil:now }}</h1>
+    <h1>{{ result }}</h1>
+    <a href="/books/">back</a>
+{% endblock %}

@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block content %}  
+    <h1>날씨 정보</h1>
+    <p>날씨 : {{ weather.status }}</p>
+    <p>평균기온 : {{ weather.temp }}</p>
+    <p>최저기온 : {{ weather.temp_min }}</p>
+    <p>최고기온 : {{ weather.temp_max }}</p>
+    <a href="/books/">back</a>
+{% endblock %}

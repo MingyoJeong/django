@@ -6,7 +6,7 @@ urlpatterns = [
     path('dinner/', views.dinner),
     path('hello/<name>/', views.hello),
     path('introduce/<name>/<int:age>/', views.introduce),
-    path('times/<int:num1>/<int:num2>',views.times),
+    path('times/<int:num1>/<int:num2>/',views.times),
     path('area.html/<int:r>/', views.area),
     path('dtl_example', views.dtl_example),
     path('throw/', views.throw),
